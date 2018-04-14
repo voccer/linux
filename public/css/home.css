@@ -1,0 +1,103 @@
+*{
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+body{
+    background: url("../image/nen.jpg") no-repeat ; /*Không lặp lại hình nền cho nó kéo giãn vừa màn hình*/
+    background-attachment: fixed; /*Giữ cho hình nền cố định*/
+   -webkit-background-size: cover; /*Kéo giãn phù hợp webkit*/
+    -moz-background-size: cover; /*Kéo giãn phù hợp motozila*/
+    -o-background-size: cover; /*Kéo giãn phù hợp opera*/
+    background-size: cover; /*Kéo giãn phù hợp*/
+}
+
+.container{
+    width: 1140px;
+    margin: 0 auto;
+}
+#header{
+
+
+}
+
+.logo {
+	float: left;
+	margin: 19px 17px 0 0;
+}
+.slogan {
+	float: left;
+	margin-top: 22px;
+	font: italic 16px "Times New Roman", Times, Georgia, serif;
+	color: rgba(255, 255, 255, .35);
+}
+
+.nav {
+	float: right;
+}
+.nav li {
+	float: left;
+	border-left: 1px solid #2c323d;
+}
+.nav a {
+	display: block;
+	line-height: 62px;
+	padding: 0 24px 0 53px;
+	color: #fff;
+	position: relative;
+}
+.nav a:after {
+	content: '';
+	/*background: url(public/images/.png) no-repeat;*/
+	position: absolute;
+	top: 22px;
+	left: 24px;
+}
+
+#contact{
+    float: right;
+    position: fixed;
+    left: 1px;
+    top:380px;
+}
+
+#contact ul li{
+    list-style-type: none; 
+}
+
+#contact ul li img{
+    width: 50px;
+    height: 50px;
+    vertical-align: middle;
+    border-radius:50%;
+    -moz-border-radius:50%;
+    -webkit-border-radius:50%;
+}
+#contact ul li img{
+    -webkit-transform:scale(0.9); /*Webkit: Thu nhỏ kích thước ảnh còn 0.8 so với ảnh gốc*/
+    -moz-transform:scale(0.9); /*Thu nhỏ đối với Mozilla*/
+    -o-transform:scale(0.9); /*Thu nhỏ đối với Opera*/
+    -webkit-transition-duration: 0.3s; /*Webkit: Thời gian phóng to, nhỏ ảnh*/
+    -moz-transition-duration: 0.3s; /*Như trên*/
+    -o-transition-duration: 0.3s; /*Như trên*/
+    opacity: 1; /*Độ mờ của hình ảnh*/
+    margin: 0 10px 5px 0; /*căn đều giữa ảnh*/
+
+    transition: all 0.3s 0.2s;
+}
+#contact ul li img:hover{
+    -webkit-transform:scale(1.3); /*Webkit: Tăng kích cỡ ảnh lên 1.1 lần*/
+    -moz-transform:scale(1.3); 
+    -o-transform:scale(1.3); 
+    box-shadow:0px 0px 30px gray; /*Đổ bóng bằng CSS3*/
+    -webkit-box-shadow:0px 0px 30px gray;
+    -moz-box-shadow:0px 0px 30px gray; 
+    opacity: 1; /*Độ mờ của hình ảnh*/
+    margin-left: 20px;
+}
+
+.main .frame{
+    background-color: white;
+    border: 1px solid rgba(248, 197, 57, 0.979);
+}
