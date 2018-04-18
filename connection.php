@@ -1,5 +1,5 @@
 <?php
-    $connect['host'] = 'localhost'; //Tên server, nếu dùng hosting free thì cần thay đổi
+    $connect['host'] = '127.0.0.1'; //Tên server, nếu dùng hosting free thì cần thay đổi
     $connect['dbname'] = 'db_linux'; //Đây là tên của Database
     $connect['username'] = 'root'; //Tên sử dụng Database
     $connect['password'] = '';//Mật khẩu của tên sử dụng Database

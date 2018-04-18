@@ -77,7 +77,7 @@
                           
     //Thông báo quá trình lưu
     if ($addmember)
-        echo "Quá trình đăng ký thành công. <a href='/Trongduc/home.php'>Về trang chủ</a>";
+        echo "Quá trình đăng ký thành công. <a href='home.php'>Về trang chủ</a>";
     else
         echo "Có lỗi xảy ra trong quá trình đăng ký. <a href='register.php'>Thử lại</a>";
 ?>
