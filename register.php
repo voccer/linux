@@ -5,68 +5,33 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <link rel="stylesheet" href="public/css/register.css">
     <title>Trang đăng lý</title>
+
+    <!-- Latest compiled and minified CSS & JS -->
+    <link rel="stylesheet" media="screen" href="//netdna.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <script src="//code.jquery.com/jquery.js"></script>
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    
+    <style type="text/css">
+        body{
+            background: url("public/image/nen.jpg") no-repeat ; /*Không lặp lại hình nền cho nó kéo giãn vừa màn hình*/
+            background-attachment: fixed; /*Giữ cho hình nền cố định*/
+           -webkit-background-size: cover; /*Kéo giãn phù hợp webkit*/
+            -moz-background-size: cover; /*Kéo giãn phù hợp motozila*/
+            -o-background-size: cover; /*Kéo giãn phù hợp opera*/
+            background-size: cover; /*Kéo giãn phù hợp*/
+        }
+
+    </style>
 </head>
 
 <body>
-    <h1>Trang đăng ký thành viên</h1>
-    <form action="handle_register.php" method="POST">
-        <table cellpadding="0" cellspacing="0" border="1">
-            <tr>
-                <td>
-                    Tên đăng nhập :
-                </td>
-                <td>
-                    <input type="text" name="txtUsername" size="50" />
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    Mật khẩu :
-                </td>
-                <td>
-                    <input type="password" name="txtPassword" size="50" />
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    Email :
-                </td>
-                <td>
-                    <input type="text" name="txtEmail" size="50" />
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    Họ và tên :
-                </td>
-                <td>
-                    <input type="text" name="txtFullname" size="50" />
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    Ngày sinh :
-                </td>
-                <td>
-                    <input type="text" name="txtBirthday" size="50" />
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    Giới tính :
-                </td>
-                <td>
-                    <select name="txtSex">
-                        <option value=""></option>
-                        <option value="Nam">Nam</option>
-                        <option value="Nu">Nữ</option>
-                    </select>
-                </td>
-            </tr>
-        </table>
-        <input type="submit" value="Đăng ký" />
-        <input type="reset" value="Nhập lại" />
-    </form>
+
+    <?php
+        include ("module/header.php");
+        include ("module/contact.php");
+        include ("module/register.php");
+        include ("module/footer.php");
+    ?>
 </body>
 
 </html>

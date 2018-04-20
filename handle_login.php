@@ -1,26 +1,26 @@
 <?php
 
 include ('connection.php');
-// username và password được gửi từ form đăng nhập
+// email và password được gửi từ form đăng nhập
 
-$username=$_POST['txtUsername'];
+$email=$_POST['txtEmail'];
 $password=$_POST['txtPassword'];
  
 $password = md5($password);
 
 // Xử lý để tránh MySQL injection
-$username = stripslashes($username);
+$email = stripslashes($email);
 $password = stripslashes($password);
-$username = mysqli_real_escape_string($con, $username);
+$email = mysqli_real_escape_string($con, $email);
 $password = mysqli_real_escape_string($con, $password);
 
-if ($username == '' || $password == '')
+if ($email == '' || $password == '')
 {
     echo("Ban Phai Dien Ten va mat khau");
     exit();
 }
 
-$sql= "SELECT * FROM $tbl_name WHERE username = '$username' and password='$password'";
+$sql= "SELECT * FROM $tbl_name WHERE email = '$email' and password='$password'";
 
 $result=mysqli_query($con, $sql);
 
@@ -31,7 +31,7 @@ if($count==1){
     header("location:login_success.php");
 }
 else {
-    echo "Sai tên đăng nhập hoặc mật khẩu";
+    echo "Sai tên đăng nhập hoặc mật khẩu. Quay lai: <a href='login.php'>Đăng nhập</a>";
 }
-?>
 
+?>

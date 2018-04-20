@@ -5,31 +5,37 @@
     <title></title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <link rel="stylesheet" href="public/css/login.css">
+    
+    <!-- Latest compiled and minified CSS & JS -->
+    <link rel="stylesheet" media="screen" href="//netdna.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <script src="//code.jquery.com/jquery.js"></script>
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    
+    <style type="text/css">
+        body{
+            background: url("public/image/nen.jpg") no-repeat ; /*Không lặp lại hình nền cho nó kéo giãn vừa màn hình*/
+            background-attachment: fixed; /*Giữ cho hình nền cố định*/
+           -webkit-background-size: cover; /*Kéo giãn phù hợp webkit*/
+            -moz-background-size: cover; /*Kéo giãn phù hợp motozila*/
+            -o-background-size: cover; /*Kéo giãn phù hợp opera*/
+            background-size: cover; /*Kéo giãn phù hợp*/
+        }
+
+    </style>
 </head>
 
+
+
 <body>
-    <form action='handle_login.php' method='POST'>
-        <table cellpadding='0' cellspacing='0' border='1'>
-            <tr>
-                <td>
-                    Tên đăng nhập :
-                </td>
-                <td>
-                    <input type='text' name='txtUsername' />
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    Mật khẩu :
-                </td>
-                <td>
-                    <input type='password' name='txtPassword' />
-                </td>
-            </tr>
-        </table>
-        <input type='submit' value='Đăng nhập' />
-        <a href='register.php' title='Đăng ký'>Đăng ký</a>
-    </form>
+    <?php
+        include ("module/header.php");
+        include ("module/contact.php");
+        include ("module/login.php");
+        include ("module/footer.php");
+    ?>
+    
+
+
 </body>
 
 </html>
