@@ -272,6 +272,10 @@
  /*
   * Addresses margins set differently in IE 6/7.
   */
+
+ul li{
+    list-style-type:none;
+}
   
  dl,
  menu,

@@ -1,0 +1,55 @@
+.wrap {
+    width: 350px;
+    margin: auto;
+    background: #a45290;
+    margin-top: 50px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+h1 {
+    vertical-align: left;
+    font-family: comic sans ms;
+    margin-left: 100px;
+    margin-top: 10px;
+}
+
+.wrap form {
+    padding: 10px;
+    font-family: comic sans ms;
+    border: 1px dotted #c4c7aa;
+}
+
+.wrap h2 {
+    text-align: center;
+    background: #312344;
+    color: #c4c7aa;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.wrap input {
+    padding: 10px;
+    margin: 5px;
+    border-radius: 50px;
+    border: none;
+}
+
+.wrap input[type=text], input[type=email], input[type=number], input[type=password] {
+    width: 90%;
+}
+
+.wrap .submit {
+    width: 95%;
+    background: #312344;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    color: #c4c7aa;
+}
+
+.wrap select {
+    padding: 10px;
+    width: 32%;
+    border-radius: 5px;
+}
